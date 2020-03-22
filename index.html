@@ -21,69 +21,84 @@
       <div class="main">
         <h5 class="lead main-header">Welcome!</h5>
         <p>Sign in to your <strong>Dashboard</strong></p>
+   
+    <form>
+      <div class="form-group">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01"
+            <label class="input-group-text" 
               >School/Guardian</label
             >
           </div>
-          <select class="custom-select" id="inputGroupSelect01">
+          <select class="custom-select" required>
             <option selected>School</option>
             <option value="1">Guardian</option>
           </select>
         </div>
 
+      </div>
+      <div class="form-group">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01"
+            <label class="input-group-text"
               >Name of school</label
             >
           </div>
-          <select class="custom-select" id="inputGroupSelect01">
+          <select class="custom-select">
             <option selected>Select your school...</option>
             <option value="1">Faith Academy Ota</option>
             <option value="1">Ambassador's Int. College Ota</option>
           </select>
         </div>
-
+      </div>
+      
+      <div class="form-group">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text">Username</span>
           </div>
           <input
-            type="text"
+            type="username"
             class="form-control"
             aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
+            placeholder="or your email"
+            required
           />
         </div>
-
+      </div>
+      
+      <div class="form-group">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text mb-2">Password</span>
           </div>
-          <input type="text" class="form-control" />
-        </div>
-
-        <a href="#" class="call-to-action-btn"><strong>Sign in</strong></a>
-
-        <div class="password-options">
-          <p class="mt-4 mb-2">
-            Forgot password? <span><a class="text" href="#">Reset</a></span>
-          </p>
-          <p>
-            Don't have an account yet? No worries, you can sign-up
-            <span><a class="text" href="https://owoloisaac.github.io/NSMS-Signup.github.io/">here</a></span>
-          </p>
+          <input type="password" class="form-control" required/>
         </div>
       </div>
-    </div>
+    
+      <button type="submit" class="btn btn-primary call-to-action-btn">Sign in</button>
 
-    <footer>
-      <p class="m-0">&copy;2020</p>
-      <p class="lead m-0">For the <strong>Chimdindu Clan</strong></p>
-      <p class="m-0">Designed by isaac jesse</p>
-    </footer>
+
+      <div class="password-options">
+        <p class="mt-4 mb-2">
+          Forgot password? <span><a class="text" href="#">Reset</a></span>
+        </p>
+        <p>
+          Don't have an account yet? No worries, you can sign-up
+          <span><a class="text" href="https://owoloisaac.github.io/NSMS-Signup.github.io/">here</a></span>
+        </p>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<footer>
+  <div class="page-info">
+    <p class="m-0 footer-text">&copy;2020</p>
+    <p class=" ml-2 footer-text"> This is a project built by the <strong>Chimdindu Clan.</strong> All rights reserved.</p>
+  </div>
+</footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
